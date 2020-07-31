@@ -8,6 +8,18 @@
     <ApplicationInsightsResourceId>/subscriptions/5ae35b9e-9571-4a30-8426-62c1ba3394c4/resourceGroups/vatsa/providers/microsoft.insights/components/vatsaplaygroundwin</ApplicationInsightsResourceId>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PackageId>Tailspin</PackageId>
+    <Version>1.0.0</Version>
+    <IsPackable>true</IsPackable>
+    <Authors>Tailspin</Authors>
+    <Company>GitHub</Company>
+    <PackageDescription>This package adds an Octocat!</PackageDescription>
+    <RepositoryUrl>https://github.com/srivatsamarichi/tailspin-spacegame-web</RepositoryUrl>
+  </PropertyGroup>
+
   <ItemGroup>
     <!-- <PackageReference Include="Microsoft.AspNetCore.App" /> -->
     <!-- <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" /> -->
