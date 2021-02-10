@@ -18,6 +18,26 @@
         {
             "apiVersion": "2018-11-01",
             "name": "[variables('hostingPlanName')]",
+            "type": "Microsoft.Web/serverfarms",
+            "location": "[resourceGroup().location]",
+            "kind": "linux",
+            "tags": {},
+            "dependsOn": [],
+            "properties": {
+                "name": "[variables('hostingPlanName')]",
+                "workerSize": "0",
+                "workerSizeId": "0",
+                "numberOfWorkers": "1",
+                "reserved": true
+            },
+            "sku": {
+                "Tier": "Basic",
+                "Name": "B1"
+            }
+        },
+        {
+            "apiVersion": "2018-11-01",
+            "name": "[variables('hostingPlanName')]",
             "type": "Microsoft.Web/sites",
             "location": "[resourceGroup().location]",
             "tags": {},
@@ -51,26 +71,6 @@
                 },
                 "serverFarmId": "[variables('hostingPlanName')]",
                 "clientAffinityEnabled": false
-            }
-        },
-        {
-            "apiVersion": "2018-11-01",
-            "name": "[variables('hostingPlanName')]",
-            "type": "Microsoft.Web/serverfarms",
-            "location": "[resourceGroup().location]",
-            "kind": "linux",
-            "tags": {},
-            "dependsOn": [],
-            "properties": {
-                "name": "[variables('hostingPlanName')]",
-                "workerSize": "0",
-                "workerSizeId": "0",
-                "numberOfWorkers": "1",
-                "reserved": true
-            },
-            "sku": {
-                "Tier": "Basic",
-                "Name": "B1"
             }
         }
     ]
