@@ -1,0 +1,6 @@
+  
+{
+  "itemDisplayName": "Docker Web App",
+  "description": "This template creates an Azure Web App with docker support",
+  "summary": "Deploys an Azure Web App as an environment in a DevTest Lab."
+}
