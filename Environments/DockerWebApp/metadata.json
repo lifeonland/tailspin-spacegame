@@ -1,6 +1,6 @@
   
 {
-  "itemDisplayName": "Docker Web App",
-  "description": "This template creates an Azure Web App with docker support",
-  "summary": "Deploys an Azure Web App as an environment in a DevTest Lab."
+  "itemDisplayName": "Tailspin Docker Web App",
+  "description": "This template creates an Azure Web App from Tailspin Docker Container",
+  "summary": "Deploys an Azure Web App as an environment in a DevTest Lab. Fethes the container image from Tailspin ACR"
 }
