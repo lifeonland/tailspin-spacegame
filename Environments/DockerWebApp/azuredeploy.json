@@ -65,7 +65,7 @@
                             "value": "false"
                         }
                     ],
-                    "linuxFxVersion": "DOCKER|tailspin.azurecr.io/tailspin:10483",
+                    "linuxFxVersion": "DOCKER|tailspin.azurecr.io/tailspin:latest",
                     "appCommandLine": "",
                     "alwaysOn": false
                 },
