@@ -47,9 +47,9 @@
                     ],
                     "linuxFxVersion": "DOCKER|tailspin.azurecr.io/tailspin:10483",
                     "appCommandLine": "",
-                    "alwaysOn": "[parameters('alwaysOn')]"
+                    "alwaysOn": false
                 },
-                "serverFarmId": "[concat('/subscriptions/2a981f99-0d98-400f-b74e-af4eec7dc971/resourcegroups/', variables('hostingPlanName'), '/providers/Microsoft.Web/serverfarms/', variables('hostingPlanName'))]",
+                "serverFarmId": "[variables('hostingPlanName')]",
                 "clientAffinityEnabled": false
             }
         },
