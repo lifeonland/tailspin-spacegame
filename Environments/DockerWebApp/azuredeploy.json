@@ -2,10 +2,10 @@
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "ACRUsername": {
+        "Tailpin ACR Username": {
             "type": "string"
         },
-        "ACRPassword": {
+        "Tailspin ACR Password": {
             "type": "securestring"
         }
     },
@@ -54,11 +54,11 @@
                         },
                         {
                             "name": "DOCKER_REGISTRY_SERVER_USERNAME",
-                            "value": "[parameters('ACRUsername')]"
+                            "value": "[parameters('Tailpin ACR Username')]"
                         },
                         {
                             "name": "DOCKER_REGISTRY_SERVER_PASSWORD",
-                            "value": "[parameters('ACRPassword')]"
+                            "value": "[parameters('Tailspin ACR Password')]"
                         },
                         {
                             "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
