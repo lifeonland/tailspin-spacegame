@@ -1,10 +1,7 @@
 name: Spacegame.Web
 on:
   push:
-    branches:
-      - master
-      - docker-support
-      - website-fixes
+    branches: master
   pull_request:
     branches: [ master ]
 
