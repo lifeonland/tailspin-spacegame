@@ -1,3 +1,3 @@
-# This is a test secret for Security
+# This is a test secret for Security Analysis and SAST
 
 GitHub PAT = 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
