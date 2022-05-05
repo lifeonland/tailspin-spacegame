@@ -1,7 +1,5 @@
 name: Spacegame.Web.Docker.GHPackages
 on:
-  schedule:
-    - cron: '0 0 * * *'
   push:
     branches: [ master, ghdemo ]
   pull_request:
@@ -25,7 +23,7 @@ jobs:
         
     - name: build, scan and tag image
       run: |
-        docker build -f $GITHUB_WORKSPACE/Tailspin.SpaceGame.Web/Dockerfile -t tailspinspacegameweb:${{ github.run_number }} .
+        docker build -f $GITHUB_WORKSPACE/Dockerfile -t tailspinspacegameweb:${{ github.run_number }} .
         docker tag tailspinspacegameweb:${{ github.run_number }} ghcr.io/lifeonland/tailspinspacegameweb:${{ github.run_number }}
    
     - name: push image
