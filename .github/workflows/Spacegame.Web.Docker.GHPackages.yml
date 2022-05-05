@@ -1,7 +1,7 @@
-name: Spacegame.Web.Docker.GHPackages
+name: Spacegame.Web-GCR
 on:
   push:
-    branches: [ master, ghdemo ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -21,12 +21,12 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.CR_PAT }}    
         
-    - name: build, scan and tag image
+    - name: Build and Tag image
       run: |
         docker build -f $GITHUB_WORKSPACE/Dockerfile -t tailspinspacegameweb:${{ github.run_number }} .
         docker tag tailspinspacegameweb:${{ github.run_number }} ghcr.io/lifeonland/tailspinspacegameweb:${{ github.run_number }}
    
-    - name: push image
+    - name: Push image
       run: |
         docker push ghcr.io/lifeonland/tailspinspacegameweb:${{ github.run_number }}
     
